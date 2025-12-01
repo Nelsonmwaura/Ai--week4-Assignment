@@ -1,0 +1,25 @@
+{
+  "id": "login-test",
+  "version": "2.0",
+  "name": "Login Test",
+  "tests": [{
+    "id": "valid-login",
+    "commands": [
+      { "command": "open", "target": "https://example.com/login" },
+      { "command": "type", "target": "id=username", "value": "validUser" },
+      { "command": "type", "target": "id=password", "value": "validPass" },
+      { "command": "click", "target": "id=loginBtn" },
+      { "command": "assertText", "target": "css=h1", "value": "Dashboard" }
+    ]
+  },
+  {
+    "id": "invalid-login",
+    "commands": [
+      { "command": "open", "target": "https://example.com/login" },
+      { "command": "type", "target": "id=username", "value": "wrong" },
+      { "command": "type", "target": "id=password", "value": "wrong" },
+      { "command": "click", "target": "id=loginBtn" },
+      { "command": "assertText", "target": "css=.error", "value": "Invalid credentials" }
+    ]
+  }]
+}

@@ -1,0 +1,3 @@
+Training Accuracy (last epoch): 0.9784
+Training Loss (last epoch): 0.0743
+Test set evaluation (accuracy/F1) skipped due to unlabeled test data. Please organize 'testing_set' into class subfolders for full evaluation.
